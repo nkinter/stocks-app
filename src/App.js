@@ -45,7 +45,7 @@ class App extends Component {
     fetch(
       `https://6rojikg4b0.execute-api.us-east-1.amazonaws.com/dev/getvaluetable?dollars=${
         this.state.total_amount
-      }&size=${this.state.num_stocks}`
+      }&size=${this.state.num_stocks}`,{method: 'GET', mode: 'cors'}
     )
       .then(results => {
         console.log(results);
