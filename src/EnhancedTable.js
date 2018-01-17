@@ -208,14 +208,14 @@ class EnhancedTable extends React.Component {
                 })}
               {emptyRows > 0 && (
                 <TableRow style={{ height: 49 * emptyRows }}>
-                  <TableCell colSpan={6} />
+                  <TableCell colSpan={12} />
                 </TableRow>
               )}
             </TableBody>
             <TableFooter>
               <TableRow>
                 <TablePagination
-                  colSpan={6}
+                  colSpan={12}
                   count={data.length}
                   rowsPerPage={rowsPerPage}
                   page={page}
