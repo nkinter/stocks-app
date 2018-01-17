@@ -43,11 +43,12 @@ class App extends Component {
 
   callApi() {
     fetch(
-      `/dev/getvaluetable?dollars=${this.state.total_amount}&size=${
-        this.state.num_stocks
-      }`
+      `https://6rojikg4b0.execute-api.us-east-1.amazonaws.com/dev/getvaluetable?dollars=${
+        this.state.total_amount
+      }&size=${this.state.num_stocks}`
     )
       .then(results => {
+        console.log(results);
         return results.json();
       })
       .then(data => {
